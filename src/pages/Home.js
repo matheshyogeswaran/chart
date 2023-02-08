@@ -1,4 +1,5 @@
 import BarChart from "../components/BarChart";
+import LineChart from "../components/LineChart";
 import { UserData } from "../Data/Data";
 import { useState } from "react";
 
@@ -30,6 +31,10 @@ const Home = () => {
       <div style={{ width: 600 }}>
         <BarChart chartData={userData} />
       </div>
+      <div style={{ width: 600 }}>
+        <LineChart chartData={userData} />
+      </div>
+      
     </div>
   );
 };
