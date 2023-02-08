@@ -27,18 +27,22 @@ const Home = () => {
   });
 
   return (
-    <div>
-      <h1>Charts</h1>
-      <div style={{ width: 600 }}>
-        <BarChart chartData={userData} />
+    <div style={{ backgroundColor: "lightblue" }}>
+      <div className="container">
+        <h1 className="text-center">Charts</h1>
+        <div className="col-md-12 mt-5">
+          <BarChart chartData={userData} />
+        </div>
+        <div className="row">
+          <div className="col-md-8 mt-5">
+            {" "}
+            <LineChart chartData={userData} />
+          </div>
+          <div className="col-md-4 mt-5">
+            <PieChart chartData={userData} />
+          </div>
+        </div>
       </div>
-      <div style={{ width: 600 }}>
-        <LineChart chartData={userData} />
-      </div>
-      <div style={{ width: 600 }}>
-        <PieChart chartData={userData} />
-      </div>
-      
     </div>
   );
 };
