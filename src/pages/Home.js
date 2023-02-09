@@ -29,16 +29,20 @@ const Home = () => {
   return (
     <div style={{ backgroundColor: "lightblue" }}>
       <div className="container">
-        <h1 className="text-center">Charts</h1>
+        <h1 className="text-center mb-5">Charts</h1>
+        <h2 className="text-center mb-5">Bar Chart</h2>
+
         <div className="col-md-12 mt-5">
           <BarChart chartData={userData} />
         </div>
         <div className="row">
           <div className="col-md-8 mt-5">
-            {" "}
+            <h2 className="text-center mb-5">Line Chart</h2>{" "}
             <LineChart chartData={userData} />
           </div>
           <div className="col-md-4 mt-5">
+            <h2 className="text-center mb-5">Pie Chart</h2>
+
             <PieChart chartData={userData} />
           </div>
         </div>
